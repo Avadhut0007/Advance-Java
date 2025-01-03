@@ -1,0 +1,13 @@
+package edu.jspiders.multithreading.resource;
+
+public class Product {
+	
+	public void consume() {
+		
+	}
+	
+	public void produce() {
+		
+	}
+
+}

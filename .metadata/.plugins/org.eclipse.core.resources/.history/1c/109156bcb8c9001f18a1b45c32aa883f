@@ -1,0 +1,14 @@
+package edu.jspiders.multithreading.thread;
+
+import edu.jspiders.multithreading.resource.Product;
+
+public class Consumer extends Thread{
+	
+	private Product product;
+	
+	@Override
+	public void run() {
+		
+	}
+
+}

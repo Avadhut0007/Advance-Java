@@ -1,0 +1,14 @@
+package edu.jspiders.multithreading.main;
+
+import edu.jspiders.multithreading.thread.MyThread1;
+
+public class ThreadMain {
+	public static void main(String[] args) {
+		
+		MyThread1 myThread1 = new MyThread1();
+		Thread thread = new Thread(myThread1);
+		
+		
+	}
+
+}

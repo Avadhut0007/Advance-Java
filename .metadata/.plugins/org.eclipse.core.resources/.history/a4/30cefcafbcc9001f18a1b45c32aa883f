@@ -1,0 +1,10 @@
+package edu.jspiders.multithreading.thread;
+
+public class MyThread6 extends Thread{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+}

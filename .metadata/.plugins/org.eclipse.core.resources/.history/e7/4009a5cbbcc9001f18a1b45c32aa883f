@@ -1,0 +1,8 @@
+package edu.jspiders.multithreading.resource;
+
+public class Resource {
+	
+	Object object1= new Object();
+	Object object2= new Object();
+
+}

@@ -1,0 +1,23 @@
+package edu.jspiders.multithreading.resource;
+
+public class Product {
+	
+	private int quantity;
+	
+	
+	
+	public Product(int quantity) {
+		super();
+		this.quantity = quantity;
+	}
+
+	public void consume() {
+		this.quantity--;
+	}
+	
+	public void produce() {
+		this.quantity++;
+		
+	}
+
+}

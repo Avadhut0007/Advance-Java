@@ -1,0 +1,10 @@
+package edu.jspiders.multithreading.main;
+
+public class ThreadMain5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

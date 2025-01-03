@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.main.Task"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.main.Main"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.main.ThreadMain"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread1"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.main.ThreadMain2"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread2"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.main.ThreadMain3"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread3"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread4"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread5"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.resource.Counter"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.resource.Product"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.Consumer"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.Producer"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.resource.Resource"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread7"/>
+    <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread6"/>
+</qualifiedTypeNameHistroy>
