@@ -1,8 +1,0 @@
-package edu.jspiders.multithreading.main;
-
-public class ThreadMain {
-	public static void main(String[] args) {
-		
-	}
-
-}
