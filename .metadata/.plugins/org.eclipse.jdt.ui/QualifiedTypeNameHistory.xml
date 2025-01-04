@@ -24,4 +24,10 @@
     <fullyQualifiedTypeName name="edu.jspiders.multithreading.resource.Resource"/>
     <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread7"/>
     <fullyQualifiedTypeName name="edu.jspiders.multithreading.thread.MyThread6"/>
+    <fullyQualifiedTypeName name="edu.jspiders.filehandling.operation.DeleteFile"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
