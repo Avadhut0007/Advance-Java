@@ -3,23 +3,23 @@ package edu.jspiders.jdbc.operation;
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class JDBCInsert {
-	
+public class JDBCUpdate {
+
 	private static Driver driver;
 	private static Connection connection;
 	private static Statement statement;
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
-		
 		openConnection();
-		statement = connection.createStatement();
-		int res = statement.executeUpdate("INSERT INTO users values (4,'Suresh','suresh@gmail.com','8765676567','suresh@123')");
-		System.out.println(res);
-		System.out.println(res+"rows affected");
+		statement= connection.createStatement();
+		int rows =statement.executeUpdate("UPDATE users set password = 'Suresh@4567' WHERE id = 4");
+		System.out.println(rows + " (rows)affected ");
 		closeConnection();
+		
 
 	}
 	

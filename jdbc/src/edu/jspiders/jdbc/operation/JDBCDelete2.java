@@ -3,39 +3,43 @@ package edu.jspiders.jdbc.operation;
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 
-public class JDBCInsert {
+public class JDBCDelete2 {
 	
 	private static Driver driver;
 	private static Connection connection;
-	private static Statement statement;
+	private static PreparedStatement preparedStatement;
+	
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
-		
-		openConnection();
-		statement = connection.createStatement();
-		int res = statement.executeUpdate("INSERT INTO users values (4,'Suresh','suresh@gmail.com','8765676567','suresh@123')");
-		System.out.println(res);
-		System.out.println(res+"rows affected");
-		closeConnection();
+		try {
+			openConnection();
+			preparedStatement = connection.prepareStatement("DELETE FROM users WHERE id = ?");
+			preparedStatement.setInt(1, 2);
+			int rows =preparedStatement.executeUpdate();
+			System.out.println(rows + " rows(s) affected");
+			
+		} finally {
+			closeConnection();
+		}
 
 	}
-	
+
 	private static void openConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		driver = new com.mysql.cj.jdbc.Driver();
 		DriverManager.registerDriver(driver);
-		connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcqspiders?user=root&password=1234");
+		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcqspiders?user=root&password=1234");
 	}
-	
+
 	private static void closeConnection() throws SQLException {
-		if(statement != null)
-			statement.close();
-		if(connection != null)
+		if (preparedStatement != null)
+			preparedStatement.close();
+		if (connection != null)
 			connection.close();
-		if(driver != null)
+		if (driver != null)
 			DriverManager.deregisterDriver(driver);
 	}
 

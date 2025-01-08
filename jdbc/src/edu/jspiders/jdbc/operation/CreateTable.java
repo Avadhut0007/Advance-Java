@@ -10,7 +10,7 @@ import com.mysql.cj.jdbc.Driver;
 public class CreateTable {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException{
-		//1.load the Drive class
+				//1.load the Drive class
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				
 				Driver driver = new com.mysql.cj.jdbc.Driver(); //upcast
