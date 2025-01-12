@@ -1,27 +1,21 @@
-package edu.jspiders.hibernate.dto;
+package edu.jspiders.hibernatemappings.dto;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import lombok.Data;
+import javax.persistence.OneToOne;
 
-@Entity
-@Data
-public class UserDTO {
-	
+public class User {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@Column(nullable = false,unique = false)
+	@Column(nullable = false, unique = false)
 	private String name;
-	private String email;
+	@Column(nullable = false, unique = true)
 	private long mobile;
-	private String password;
-	
-	
-	
-	
+	@OneToOne
+	private AadharCard aadharCard;
 
 }

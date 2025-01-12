@@ -11,7 +11,7 @@ public class UserDAO {
 	public static void main(String[] args) {
 		UserDTO userDTO = new UserDTO();
 		
-	
+		
 		
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("hibernate");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
