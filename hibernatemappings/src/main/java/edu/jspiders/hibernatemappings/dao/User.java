@@ -1,4 +1,4 @@
-package edu.jspiders.hibernatemappings.dto;
+package edu.jspiders.hibernatemappings.dao;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;

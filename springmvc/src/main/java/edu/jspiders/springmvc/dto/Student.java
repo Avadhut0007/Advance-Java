@@ -1,4 +1,4 @@
-package edu.jspiders.hibernatemappings.dao;
+package edu.jspiders.springmvc.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,18 +10,25 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "aadhar")
 @Data
-public class AadharCard {
-
+@Table(name="students")
+public class Student {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@Column(nullable = false,unique = true)
+	private String name;
+	
+	@Column(nullable = false,unique = true)
+	private String email;
+	
 	@Column(nullable = false, unique = true)
-	private long aadharNumber;
+	private long mobile;
+	
+	
+	@Column(nullable = false,unique = true)
+	private String course;
 
 }
-	
-	
-
-
